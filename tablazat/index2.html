@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <table id="tablazat">
+        <img src="" alt="">
+    </table>
+
+
+
+
+    <script>
+        console.log(filmek)
+
+
+        for (const elem of filmek) {
+            let tr=document.createElement("tr")
+            document.getElementById("tablazat").appendChild(tr)
+            let td=document.createElement("td")
+            tr.appendChild(td)
+            td.innerHTML=elem.Title
+            let td2=document.createElement("td")
+            tr.appendChild(td2)
+            let kep=document.createElement("img")
+            kep.setAttribute("src",elem.Images[0])
+            td2.appendChild(kep)
+            kep.style.width="300px"
+            let td3=document.createElement("td")
+            tr.appendChild(td3)
+            td3.innerHTML=elem.Year
+            let td4=document.createElement("td")
+            tr.appendChild(td4)
+            td4.innerHTML=elem.Language
+            let td5=document.createElement("td")
+            tr.appendChild(td5)
+            td5.innerHTML=elem.Country
+            let td6=document.createElement("td")
+            tr.appendChild(td6)
+            td6.innerHTML=elem.Type
+            let td7=document.createElement("td")
+            tr.appendChild(td7)
+            td7.innerHTML=elem.Runtime
+        }
+    </script>
+</body>
+</html>
