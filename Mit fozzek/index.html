@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-variant: small-caps;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 225px;
+            background-color: lightsalmon;
+        }
+        img{
+            height: 400px;
+            width:450px
+        }
+    </style>
 
+
+    <div id="kiir"></div>
+    <button class="btn btn-outline-success" onclick="kiad()">Mit főzzek ma?</button>
+ 
+    <script>
+        let tomb=[
+            
+        {"nev":"Magyaros pizza","kep":8,"ido":25,"kaloria":800},
+        {"nev":"Töltött káposzta","kep":5,"ido":80,"kaloria":600},
+        {"nev":"Gulyásleves","kep":3,"ido":75,"kaloria":750},
+        {"nev":"Magyaros palacsinta","kep":7,"ido":10,"kaloria":300},
+        {"nev":"Rakott krumpli","kep":9,"ido":70,"kaloria":950},
+        {"nev":"Magyaros krumplileves ","kep":6,"ido":30,"kaloria":450},
+        {"nev":"Magyaros babgulyás","kep":1,"ido":20,"kaloria":375},
+        {"nev":"Magyaros gombapörkölt","kep":2,"ido":25,"kaloria":600},
+        {"nev":"Pörkölt","kep":4,"ido":35,"kaloria":560}
+
+
+        ]
+        function kiad(){
+            let veletlen=Math.floor(Math.random() * 9) + 1;
+            for (let i = 0; i < tomb.length; i++) {
+                if (tomb[i].kep==veletlen){
+                    document.getElementById("kiir").innerHTML="<i>"+tomb[i].nev+"</i>"+"<br>"+"<img class='rounded-circle' src=kepek/"+veletlen+".jpg>"+"<br>"+tomb[i].kaloria+"kcal"+"--"+tomb[i].ido+"perc"
+                    
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>
