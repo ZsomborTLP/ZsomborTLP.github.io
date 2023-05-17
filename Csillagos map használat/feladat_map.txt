@@ -1,0 +1,13 @@
+
+1. Személy json tömb: id, vezetéknév, keresztnév, született, mottó, érték, forrás
+2. Mottó hossza, shorthand arrow-al, írjuk ki, majd mentsük le és írjuk ki
+3. Vezetéknév és ker.név összefűzése, külön functionnal
+4. Születési hónap nevét szöveggel pl. május, helyben functionnal
+5. Érték, tizedestört, kerekítse, arrow
+6. Szül. hónap és Érték kerekítés, return elem-el(json-t adjon vissza)
+
+7. Weblapon 2 oszlopos gridben, szegélyezett, árnyékolt divekben, mottó
+//---8. Kattintásra modálisban (először az id) a mottó forrása---\\
+9. A divben a mottó alatt idézet karaktereinek száma, alatta veznév, alatta kernév, 
+alatta született hónappal, alatta érték (mind az 5 más formázással),
+10. alatta annyi sárga csillag, amennyi az értékelés, többi szürke csillag, össz. 5 db   
